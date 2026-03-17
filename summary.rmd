@@ -1,5 +1,82 @@
 ---
-title: "summary"
+title: "Project summary"
 output: html_document
 ---
 
+## What is this?
+
+This project uses R to answer one policy question:
+
+  "Does the government get good value for money from funding
+   A-levels and apprenticeships?"
+
+It does this using a method called cost-benefit analysis — the same
+approach the UK government uses when deciding how to spend public money.
+
+---
+
+## What did I find?
+
+For every £1 the government spends:
+
+  - A-levels return £20.27 in economic value
+  - Level 3 Apprenticeships return £15.62
+
+Both are well above the break-even point of £1, which means both
+pathways are worth funding. These results hold even when the
+assumptions behind the numbers are challenged.
+
+---
+
+## How does the analysis work?
+
+Think of it like a personal investment calculation — but for society.
+
+COSTS
+  The government pays to fund each student through their course.
+  For A-levels that is around £9,800 over two years.
+  For apprenticeships it is around £12,750 over 18 months.
+
+BENEFITS
+  The benefits flow back to society in four ways:
+
+  1. Higher earnings for the student over their working life
+  2. More income tax and National Insurance collected by the government
+  3. Higher chance of being employed (less time out of work)
+  4. Less spending on benefits
+
+DISCOUNTING
+  Money received in the future is worth less than money today —
+  the same way you would prefer £100 now over £100 in 10 years.
+  The analysis accounts for this using a 3.5% annual discount rate,
+  as required by HM Treasury.
+
+STRESS TESTING
+  The results are re-run under different assumptions to check
+  they are not just a product of one optimistic number. Both
+  pathways still clear the break-even point across all scenarios.
+
+---
+
+## Why does this matter?
+
+This kind of analysis directly informs Spending Review decisions —
+when the government decides how much money to allocate to education,
+evidence like this helps make the case for continued investment.
+
+It is also an example of causal analysis, not just correlation.
+The earnings figures come from research that tracks real people
+over time and compares outcomes between those who took each
+qualification and those who did not.
+
+---
+
+## Data used
+
+All data is publicly available and free to use:
+
+  - DfE / IFS Longitudinal Education Outcomes (LEO) — earnings data
+  - DfE funding rates 2023/24 — cost data
+  - HM Treasury Green Book (2026) — appraisal methodology
+  - OECD Education at a Glance (2023) — international context
+  - ONS Annual Survey of Hours and Earnings — earnings baseline
